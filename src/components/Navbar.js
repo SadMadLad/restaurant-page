@@ -1,7 +1,7 @@
 import AboutUs from "../pages/AboutUs";
 import Home from "../pages/Home";
 import Contact from "../pages/Contact";
-import Menu from "../pages/Menu";
+import MenuPage from "../pages/Menu";
 
 let selectedPage = Home.HomePage();
 
@@ -57,7 +57,7 @@ const NavTabs = [
   NavTab(Home.HomePage(), `HOME`),
   NavTab(AboutUs.AboutUsPage(), `ABOUT US`),
   NavTab(Contact, `CONTACT`),
-  NavTab(Menu, `MENU`),
+  NavTab(MenuPage.MenuPage(), `MENU`),
 ];
 const NavBar = Navbar(NavTabs);
 

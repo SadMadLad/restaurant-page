@@ -226,3 +226,43 @@ footer {
 .ellipse-2 {
 	border-radius: 55%;
 }
+
+/*Menu*/
+.menu {
+	height: 100%;
+
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+
+	justify-items: center;
+	align-items: center;
+
+}
+.menu-item > .details {
+	display: flex;
+	justify-content: space-between;
+
+	margin-top: 7.5px;
+}
+.menu-item > img {
+	object-fit: cover;
+
+	height: 6.5rem;
+	width: 6.5rem;
+
+	border-bottom: 5px var(--primary) solid;
+	border-radius: 10% 10% 0 0;
+
+	transition: 0.5s;
+}
+.menu-item > img:hover {
+	box-shadow: 3px 0 10px var(--black);
+	height: 7rem;
+	width: 7rem; 
+}
+.details > p {
+	font-size: 0.55rem;
+	font-family: 'Berkshire Swash', serif;
+	color: var(--black);
+}
