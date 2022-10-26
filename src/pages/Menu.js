@@ -1,4 +1,4 @@
-const Menu = document.createElement(`h1`);
+const Menu = document.createElement(`div`);
 Menu.textContent = `Menu`;
 
 export default Menu;
