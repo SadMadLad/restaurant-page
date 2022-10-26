@@ -3,7 +3,7 @@ import Home from "../pages/Home";
 import Contact from "../pages/Contact";
 import Menu from "../pages/Menu";
 
-let selectedPage = Home;
+let selectedPage = Home.HomePage();
 
 const Navbar = (navTabsArray) => {
   const navTabs = navTabsArray;
@@ -54,7 +54,7 @@ const NavTab = (tabPage, tabTitle) => {
 };
 
 const NavTabs = [
-  NavTab(Home, `HOME`),
+  NavTab(Home.HomePage(), `HOME`),
   NavTab(AboutUs.AboutUsPage(), `ABOUT US`),
   NavTab(Contact, `CONTACT`),
   NavTab(Menu, `MENU`),
