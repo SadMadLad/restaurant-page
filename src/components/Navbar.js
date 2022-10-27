@@ -56,7 +56,7 @@ const NavTab = (tabPage, tabTitle) => {
 const NavTabs = [
   NavTab(Home.HomePage(), `HOME`),
   NavTab(AboutUs.AboutUsPage(), `ABOUT US`),
-  NavTab(Contact, `CONTACT`),
+  NavTab(Contact.ContactPage(), `CONTACT`),
   NavTab(MenuPage.MenuPage(), `MENU`),
 ];
 const NavBar = Navbar(NavTabs);
